@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Functional Calculator</title>
+</head>
+<body>
+    <h2><a href="https://github.com/stevenono/calculator.git">Code Repository Link</a></h2> 
+    <div class="calculate">
+        <table>
+            <tr>
+                <td colspan="4" name="result">
+                    <input type = "text" class="result" readonly></input>
+                </td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="number(value)" value="7">7</button></td>
+                <td><button type="button" onclick="number(value)" value="8">8</button></td>
+                <td><button type="button" onclick="number(value)" value="9">9</button></td>
+                <td><button type="button" onclick="number(value)" value="/">&divide</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="number(value)" value="4">4</button></td>
+                <td><button type="button" onclick="number(value)" value="5">5</button></td>
+                <td><button type="button" onclick="number(value)" value="6">6</button></td>
+                <td><button type="button" onclick="number(value)" value="*">x</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="number(value)" value="1">1</button></td>
+                <td><button type="button" onclick="number(value)" value="2">2</button></td>
+                <td><button type="button" onclick="number(value)" value="3">3</button></td>
+                <td><button type="button" onclick="number(value)" value="-">-</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="number(value)" value="0">0</button></td>
+                <td><button type="button" onclick="number(value)" value=".">.</button></td>
+                <td><button type="button" onclick="number(value)" value="+">+</button></td>
+                <td><button type="button" class="equal" onclick="evalua()">=</button></td>
+            </tr>
+        
+        </table> 
+    </div>
+            
+    <script src="script.js"></script>    
+</body>
+</html>
